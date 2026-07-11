@@ -45,15 +45,6 @@ Unity **6000.3.19f1** using the 2D Built-In Render Pipeline.
 6. During the final 15 seconds, both sides earn double XP.
 7. At 0:00, the higher level wins. Equal levels produce a tie.
 
-## How to test the mechanic
-
-- Collect gems quickly and watch the Rival progress slow down.
-- Stop collecting and let the Rival recover.
-- Let either side gain a three-level lead and observe the catch-up boost.
-- At 0:15, verify that the Final Sprint banner appears and the timer changes color.
-- At 0:00, verify that the results panel reports the correct winner and levels.
-- Press Play Again and confirm that the scene restarts.
-
 ## Architecture
 
 The project uses seven scripts with one clear responsibility each:
@@ -73,9 +64,4 @@ the UI separate from the gameplay rules.
 All balance values are serialized fields, so timings and XP rates can be adjusted in the
 Inspector without changing code.
 
-## Known limitations
 
-- The prototype uses a small set of original pixel-art assets made for this assessment.
-- The Rival is intentionally simulated and has no character in the arena.
-- The project contains one match scene and no separate main menu.
-- There are no enemies, weapons, upgrades, or save data; those are outside the assessment scope.
